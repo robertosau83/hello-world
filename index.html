@@ -5,11 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="p-10">
 
-<h1>Hello world!</h1>
+    <!-- i MARGINI sono la distanza da un elemento ad un altro elemento
+         PADDING distanza interna di un elemento dal suo bordo al contenuto-->
+    
+    <!-- margini: m- num (globale)   mx- (sinistra e denstra)  my- (sotto e sopra)  
+                  mt- (top)   mb- (bottom)   ml- (left)  mr- (right)--
+                  
+                  davanti a tutti posso mettere il "-" per farlo diventare negativo -->
+    
+    <!-- stesso discorso vale per i padding -->
+
+    <!-- dimensioni "custom" sempre con -[NUMpx]-->
+
+    <div class="bg-slate-500 w-[500px] h-[300px] m-10"></div>
+
+    <!-- spazio verticale tra diversi elementi -->
+    <div class="space-y-9">   
+        <div class="bg-pink-500">1</div>
+        <div class="">2</div>
+        <div class="">3</div>
+        <div class="">4</div>
+    </div>
+
+    <!-- spazio orizzontale tra diversi elementi (uso flex per metterli uno di fianco all'altro)-->
+    <div class="flex space-x-9 mt-12">   
+        <div class="bg-pink-500">1</div>
+        <div class="">2</div>
+        <div class="">3</div>
+        <div class="">4</div>
+    </div>
 
 </body>
 
